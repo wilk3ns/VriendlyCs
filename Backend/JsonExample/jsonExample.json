@@ -1,0 +1,167 @@
+{
+    [
+        // Register Response
+        {
+            "result": true,
+            "message": "User has been registered successfully"
+        },
+
+        // Login Response
+        {
+            "result": true,
+            "message": "Istifadeci qeydiyyatdan kecdi",
+            "token": "asdasdasdasda",
+            "expiry":"",
+            "body": {
+                "user": {
+                    "fullname": "Filankesof Filankes",
+                    "planType": 1,
+                    "expiry": "5 gün qalıb"
+                    "MaxUser": 6,
+                    //"avatar":{
+                    //    "head":1,
+                    //    "body":12,
+                    //    "sex":"M"
+                    }
+                    //"userType":"Founder"
+                }
+                "Evets": [
+                    {
+                        "name": "Free",
+                        "code": "ADGE34G",
+                        "place": {
+                            "title": "Common Area",
+                            "description": "Common Area that everybody can hangout",
+                            "thumbnail":"url://"
+                        }
+                    },
+                    {
+                        "name": "Non-Free",
+                        "code": "ADGE34G",
+                        "place": {
+                            "title": "Common Area",
+                            "description": "Common Area that everybody can hangout",
+                            "thumbnail":"url://"
+                        }
+                    },
+                    {
+                        "name": "Non-Free",
+                        "code": "ADGE34G",
+                        "place": {
+                            "title": "Common Area",
+                            "description": "Common Area that everybody can hangout",
+                            "thumbnail":"url://"
+                        }
+                    },
+                ],
+
+                "Places":[
+                    {
+                        "planType":1,
+                        "title": "Common Area",
+                        "description": "Common Area that everybody can hangout",
+                        "thumbnail":"url://"
+                    },
+                    {
+                        "planType":1,
+                        "title": "Common Area",
+                        "description": "Common Area that everybody can hangout",
+                        "thumbnail":"url://"
+                    }
+                ]
+            }
+        },
+
+    //Create Event
+        //Request Fields
+        {
+            "eventName*":"Atishma",
+            "placeTitle*":"Title",
+            "token*":"asdasdasdasdasd",
+
+        }
+        //Response
+        {
+            "result": true,
+            "message": "Event successfully created",
+            "eventCode":"SDFA3f3A"
+        }
+
+    //Get Event List
+        //Request Fields
+        {
+            "token":"asdasdasd",
+        }
+
+        //Response Fields
+        {
+            "result": true,
+            "message": "Event list recieved",
+            "events":[
+                {
+                    "name": "Free",
+                    "code": "ADGE34G",
+                    "place": {
+                        "title": "Common Area",
+                        "description": "Common Area that everybody can hangout",
+                        "thumbnail":"url://"
+                    }
+                },
+                {
+                    "name": "Non-Free",
+                    "code": "ADGE34G",
+                    "place": {
+                        "title": "Common Area",
+                        "description": "Common Area that everybody can hangout",
+                        "thumbnail":"url://"
+                    }
+                },
+                {
+                    "name": "Non-Free",
+                    "code": "ADGE34G",
+                    "place": {
+                        "title": "Common Area",
+                        "description": "Common Area that everybody can hangout",
+                        "thumbnail":"url://"
+                    }
+                },
+            ]
+        }
+
+    //Delete Event
+        //Request Fields
+        "token*":"asdasdas"
+        "eventCode":"ADGSCWD"
+
+        //Response fileds
+        {
+            "result":true,
+            "message":"Event deleted"
+        }
+
+    //Avatar update
+        //Request Fields
+        {
+            "token*":"asdasdasdasdasd"
+            "avatar":{
+                "head":1,
+                "body":21,
+                "sex":"F"
+            }
+        }
+
+        //Response
+        {
+            "result": true,
+            "message": "Avatar updated",
+        }
+
+    //Profile Update
+        //Request fileds
+        "token*":"asdasdasd",
+        "fullname":"Filankesov",
+        "email":"email@email.com"
+
+    ]
+}
+// 
